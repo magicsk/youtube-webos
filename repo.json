@@ -13,16 +13,16 @@
       "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "type": "web",
         "title": "YouTube Extended+",
         "appDescription": "YouTube Extended+",
         "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
         "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.0/youtube.leanback.v4_0.9.0_all.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.1/youtube.leanback.v4_0.9.1_all.ipk",
         "ipkHash": {
-          "sha256": "8f60f03395f751b034bd7fcf4190a1978884287e232422fcdbcaa4f127314eae"
+          "sha256": "20e0feae32c584331c9d458fb74bacef3547511b97978aff87ce5ec1eaa72b8a"
         }
       }
     },
@@ -33,16 +33,16 @@
       "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4.webos22",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "type": "web",
         "title": "YouTube Extended+ (webOS 22+)",
         "appDescription": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
         "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
         "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.0/youtube.leanback.v4_0.9.0_all_webOS22%2B.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.1/youtube.leanback.v4_0.9.1_all_webOS22%2B.ipk",
         "ipkHash": {
-          "sha256": "38ae569b49d68fc677c6e2d1ca2cd0a0161d5ff8113d2aefa70b778f287474f7"
+          "sha256": "68f7a05413fdc4018acad86c09e23b255ed81f157e986defdf3d4f7d3cd6687c"
         }
       }
     }
