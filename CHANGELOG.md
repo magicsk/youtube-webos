@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.9.1] - 2026/10/25
+
+## Fixed
++ App killed for memory with DeArrow on: DeArrow and auto-generated thumbnails are now downscaled to tile size (320x180) instead of decoding full 1280x720 frames on every tile
+
 ## [0.9.0] - 2026/10/24 - YouTube Extended+
 
 First release of the YouTube Extended+ fork (based on 0.8.4).
