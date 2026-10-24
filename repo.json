@@ -8,41 +8,41 @@
   "packages": [
     {
       "id": "youtube.leanback.v4",
-      "title": "YouTube AdFree",
-      "description": "YouTube AdFree",
-      "iconUri": "https://raw.githubusercontent.com/NicholasBly/youtube-webos/main/assets/icon.png",
+      "title": "YouTube Extended+",
+      "description": "YouTube Extended+",
+      "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4",
-        "version": "0.8.4",
+        "version": "0.9.0",
         "type": "web",
-        "title": "YouTube AdFree",
-        "appDescription": "YouTube AdFree",
-        "iconUri": "https://raw.githubusercontent.com/NicholasBly/youtube-webos/main/assets/icon.png",
-        "sourceUrl": "https://github.com/NicholasBly/youtube-webos",
+        "title": "YouTube Extended+",
+        "appDescription": "YouTube Extended+",
+        "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
+        "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/NicholasBly/youtube-webos/releases/download/0.8.4/youtube.leanback.v4_0.8.4_all.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.0/youtube.leanback.v4_0.9.0_all.ipk",
         "ipkHash": {
-          "sha256": "524570a54c391a1f5d40287c9462e9162840193df78e55fcae4c98eaef96eea3"
+          "sha256": "8f60f03395f751b034bd7fcf4190a1978884287e232422fcdbcaa4f127314eae"
         }
       }
     },
     {
       "id": "youtube.leanback.v4.webos22",
-      "title": "YouTube AdFree (webOS 22+)",
+      "title": "YouTube Extended+ (webOS 22+)",
       "description": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
-      "iconUri": "https://raw.githubusercontent.com/NicholasBly/youtube-webos/main/assets/icon.png",
+      "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4.webos22",
-        "version": "0.8.4",
+        "version": "0.9.0",
         "type": "web",
-        "title": "YouTube AdFree (webOS 22+)",
+        "title": "YouTube Extended+ (webOS 22+)",
         "appDescription": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
-        "iconUri": "https://raw.githubusercontent.com/NicholasBly/youtube-webos/main/assets/icon.png",
-        "sourceUrl": "https://github.com/NicholasBly/youtube-webos",
+        "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
+        "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/NicholasBly/youtube-webos/releases/download/0.8.4/youtube.leanback.v4_0.8.4_all_webOS22%2B.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.0/youtube.leanback.v4_0.9.0_all_webOS22%2B.ipk",
         "ipkHash": {
-          "sha256": "c56c4e4a1a72dddc6a12f0adb8a81b70dbeecc1dde04a68228a8483b0b590ab4"
+          "sha256": "38ae569b49d68fc677c6e2d1ca2cd0a0161d5ff8113d2aefa70b778f287474f7"
         }
       }
     }
