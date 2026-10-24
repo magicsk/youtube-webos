@@ -63,13 +63,6 @@
   border-bottom-color: #3f3f3f;
 }
 
-.ytaf-ui-container .ytaf-logo {
-  width: 5.55vh;
-  height: 5.55vh;
-  object-fit: contain;
-  margin-left: 1.1vh;
-}
-
 .ytaf-ui-container > div.ytaf-settings-page {
   padding: 0 3vh 2.2vh;
   overflow-y: auto;
@@ -292,11 +285,6 @@
   .ytaf-ui-container h1 {
     font-size: 2.22vh;
     padding: 1.3vh 2.2vh 1vh;
-  }
-  
-  .ytaf-ui-container .ytaf-logo {
-    width: 4.1vh;
-    height: 4.1vh;
   }
 }
 

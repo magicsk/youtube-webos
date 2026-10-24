@@ -1,56 +1,35 @@
-# youtube-webos
+# YouTube Extended+
 
-An upgraded fork of webosbrew's youtube-webos with extended features and fixes.
+Ad-free YouTube for LG webOS TVs, with SponsorBlock, DeArrow and a pile of fixes.
 
-## Added Features
-- Full support for webOS 3, 4, 5, 6, 22, 23, 24, and 25 (2016 and newer LG TVs) (webOS 1 and 2 currently not supported)
-- Enhanced AdBlock Engine: New schema-based filtering system (cleaner Home, Search, and Shorts)
-- Filter out QR code + Shop button overlays during video playback
-- Enhanced Menu UI + Themes
-- Auto Login - bypasses account selection screen
-- Force Max Quality
-- Hide Endcards
-- Shortcuts - Programmable 0-9 key shortcuts during video playback
-- Guest Mode: Hides annoying "Sign in" prompts
+YouTube Extended+ is a fork of [NicholasBly/youtube-webos](https://github.com/NicholasBly/youtube-webos)
+(itself a fork of [webosbrew/youtube-webos](https://github.com/webosbrew/youtube-webos)) with these additions on top:
 
-- SponsorBlock: Highlight feature added
--- All segment types added (Hook, Tangents, muted segments)
--- Color selector for all segments
--- Segment UI list replicating desktop segment list
--- Jump to highlight segment with blue button on LG remote
--- Per-segment options including auto skip, manual skip, show in progress bar, and disabled
--- Skip Segments Once option
-
-- Toggle display on/off with red button on LG remote for OLED TVs + persistent keepalive
-- Return YouTube Dislike - added to description tab in video
-- Display Time in UI: Smart clock that hides during fullscreen and when description panel is open
-- YouTube app fixes - Full video description panel hack to restore visual elements and enable full navigation
-- Customizable YouTube UI fixes such as multiline titles and video shelf opacity for better visibility
-- Bug fixes, UI fixes
-
-## Improvements
-- Rewritten codebase optimized for performance and efficiency to support LG TV hardware
-
-Review changes made since 0.3.8 [here](https://github.com/NicholasBly/youtube-webos/blob/main/CHANGELOG.md)
-
-<img width="642" height="752" alt="webOS_TV_26_Simulator_1 5 0_x16zOsWFaw" src="https://github.com/user-attachments/assets/046b0361-0648-4750-ab97-0b64b553ec17" />
-
-<img width="642" height="631" alt="webOS_TV_25_Simulator_1 4 3_UaFvPZ67yL" src="https://github.com/user-attachments/assets/61963e1b-8211-439a-9f66-50b669940233" />
-
-<img width="642" height="576" alt="webOS_TV_25_Simulator_1 4 3_uW1aZQeVle" src="https://github.com/user-attachments/assets/877a22b6-6814-457b-926c-cac50ed36077" />
-
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/84c8b6b3-4c82-4a63-9100-b236f2dd3225" />
-
-<!--![Configuration Screen](https://github.com/NicholasBly/youtube-webos/blob/main/screenshots/webOS_TV_24_Simulator_mKe8Gv7zXq.png?raw=true)-->
-![Segment Skipped](https://github.com/NicholasBly/youtube-webos/blob/main/screenshots/2_sm_new.png?raw=true)
+- **[DeArrow](https://dearrow.ajay.app)** - crowdsourced titles and thumbnails instead of clickbait. Its own tab in the settings with the extension's options: replace titles, title formatting (Title Case, Sentence case, ...), remove emojis, replace thumbnails, and what to show without a crowdsourced thumbnail (random frame, YouTube's auto-generated start/middle/end frame, original or blank).
+- **SponsorBlock keeps working after switching apps** - coming back to the app used to silently turn SponsorBlock off until the next video.
+- **No more ~20 s frozen video after a video screensaver** (e.g. [Aerial](https://github.com/aabytt/webos-custom-screensaver-aerial)) - playback recovers in a couple of seconds.
+- Red settings panel and the YouTube Extended+ name.
 
 ## Features
 
-- Advertisements blocking
-- [SponsorBlock](https://sponsor.ajay.app/) integration
+Everything from the upstream fork:
+
+- Full support for webOS 3, 4, 5, 6, 22, 23, 24, and 25 (2016 and newer LG TVs) (webOS 1 and 2 currently not supported)
+- Ad blocking with a schema-based filtering engine (cleaner Home, Search, and Shorts)
+- Filter out QR code + Shop button overlays during video playback
+- [SponsorBlock](https://sponsor.ajay.app/) with all segment types, segment colours, a segment list, highlight jumping (🟦 BLUE button), per-segment auto skip / manual skip / progress bar / off, and skip-once
+- [DeArrow](https://dearrow.ajay.app) crowdsourced titles and thumbnails
+- Return YouTube Dislike in the video description
+- Auto Login - bypasses the account selection screen
+- Force Max Quality, Force Video Codec, Max Thumbnail Quality
+- Hide Endcards, remove Shorts / Live videos / shelves
+- Shortcuts - programmable 0-9 key shortcuts during video playback
+- Guest Mode: hides "Sign in" prompts
+- OLED care: toggle the display off with the 🟥 RED button, true-black UI
+- Display Time in UI, multiline titles, video shelf opacity and other UI fixes
 - [Autostart](#autostart)
 
-**Note:** Configuration screen can be opened by pressing 🟩 GREEN button on the remote.
+![Segment Skipped](screenshots/2_sm_new.png)
 
 ## Pre-requisites
 
@@ -58,11 +37,15 @@ Review changes made since 0.3.8 [here](https://github.com/NicholasBly/youtube-we
 
 ## Installation
 
-- Use [webOS Homebrew Channel](https://github.com/webosbrew/webos-homebrew-channel) - app is available via repo link: https://raw.githubusercontent.com/NicholasBly/youtube-webos/main/repo.json
-- Use [Device Manager app](https://github.com/webosbrew/dev-manager-desktop) - see [Releases](https://github.com/NicholasBly/youtube-webos/releases) for a
-  prebuilt `.ipk` binary file. A webOS22+ .ipk is available for users on 2022+ TVs, supporting webOS22-25. These are lighter, more optimized builds for newer hardware, without translation layers needed for older TVs.
+- Use [webOS Homebrew Channel](https://github.com/webosbrew/webos-homebrew-channel) - add this repository in its settings:
+  `https://raw.githubusercontent.com/magicsk/youtube-webos/main/repo.json`
+  (remove other YouTube AdFree repositories first - they install the same app).
+  "YouTube Extended+ (webOS 22+)" is a lighter build for 2022+ TVs (webOS 22-25).
+- Use [Device Manager app](https://github.com/webosbrew/dev-manager-desktop) - see [Releases](https://github.com/magicsk/youtube-webos/releases) for prebuilt `.ipk` files (`..._all.ipk` for every TV, `..._all_webOS22+.ipk` for 2022+ TVs).
 - Use [webOS TV CLI tools](https://webostv.developer.lge.com/develop/tools/cli-installation) -
   `ares-install youtube...ipk` (For more information on configuring the webOS CLI tools, see [below](#development-tv-setup))
+
+Installing over an existing YouTube AdFree install keeps your settings (it is the same app id).
 
 ## Configuration
 
@@ -78,7 +61,7 @@ via SSH or Telnet:
 luna-send-pub -n 1 'luna://com.webos.service.eim/addDevice' '{"appId":"youtube.leanback.v4","pigImage":"","mvpdIcon":""}'
 ```
 
-This will make "YouTube AdFree" display as an eligible input application (next
+This will make "YouTube Extended+" display as an eligible input application (next
 to HDMI/Live TV, etc...), and, if it was the last selected input, it will be
 automatically launched when turning on the TV.
 
@@ -97,7 +80,7 @@ luna-send-pub -n 1 'luna://com.webos.service.eim/deleteDevice' '{"appId":"youtub
 - Clone the repository
 
 ```sh
-git clone https://github.com/NicholasBly/youtube-webos.git
+git clone https://github.com/magicsk/youtube-webos.git
 ```
 
 - Enter the folder and build the App, this will generate a `*.ipk` file.

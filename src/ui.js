@@ -12,9 +12,6 @@ import sponsorBlockUI from './Sponsorblock-UI.js';
 import { sendKey, REMOTE_KEYS, COLOR_CODE_MAP, isGuestMode, isWatchPage, isShortsPage, isSearchPage, SELECTORS, getVideo } from './utils.js';
 import { syncAdblockHook, initTrackingBlock, destroyTrackingBlock } from './adblock.js';
 import { titleFormattingSupported } from './dearrow.js';
-import logoBlueUrl from './icons/logo-blue.png';
-import logoRedUrl from './icons/logo-red.png';
-import logoDarkUrl from './icons/logo-dark.png';
 import { getWebOSVersion } from './webos-utils.js';
 import { showNotification as _showNotification, setNotificationOled, setNotificationTheme } from './notifications.js';
 
@@ -548,20 +545,8 @@ function createOptionsPanel() {
     evt.preventDefault(); evt.stopPropagation();
   }, true);
 
-  const toggleTheme = (evt) => { 
-      evt.preventDefault(); 
-      evt.stopPropagation(); 
-      configWrite('uiTheme', configRead('uiTheme') === 'blue-force-field' ? 'classic-red' : 'blue-force-field'); 
-      const activeTab = tabBtns[activePage];
-      if (activeTab) activeTab.focus();
-  };
-  const createLogo = (src, cls) => createElement('img', { src, alt: 'Logo', class: `ytaf-logo ${cls}`, title: 'Click to switch theme', style: cls !== 'logo-blue' ? { display: 'none' } : {}, events: { click: toggleTheme }});
-  
   const elmHeading = createElement('h1', {},
-    createElement('span', { text: 'YouTube Extended' }),
-    createLogo(logoBlueUrl, 'logo-blue'),
-    createLogo(logoRedUrl, 'logo-red'),
-    createLogo(logoDarkUrl, 'logo-dark')
+    createElement('span', { text: 'YouTube Extended+' })
   );
   elmContainer.appendChild(elmHeading);
   elmContainer.appendChild(tabMenu);
@@ -767,7 +752,7 @@ function showOptionsPanel(visible) {
         
         // Apply startup states that depend on panel existence
         applyOledMode(configRead('enableOledCareMode'));
-        applyTheme(configRead('uiTheme'));
+        applyTheme(UI_THEME);
     }
 
     console.info('Showing and focusing options panel!');
@@ -1497,20 +1482,6 @@ function initGlobalStyles() {
     }
 }
 
-function updateLogoState() {
-  const theme = configRead('uiTheme');
-  const isOled = configRead('enableOledCareMode');
-  const [logoBlue, logoRed, logoDark] = ['.logo-blue', '.logo-red', '.logo-dark'].map(c => document.querySelector(`.ytaf-logo${c}`));
-  if (!logoBlue || !logoRed || !logoDark) return;
-
-  if (isOled) { logoBlue.style.display = 'none'; logoRed.style.display = 'none'; logoDark.style.display = ''; }
-  else {
-    logoDark.style.display = 'none';
-    if (theme === 'classic-red') { logoRed.style.display = ''; logoBlue.style.display = 'none'; }
-    else { logoRed.style.display = 'none'; logoBlue.style.display = ''; }
-  }
-}
-
 function syncOledShelfOpacity() {
   const opacityVal = configRead('videoShelfOpacity');
   document.documentElement.style.setProperty('--ytaf-oled-opacity', String(opacityVal / 100));
@@ -1528,16 +1499,16 @@ function applyOledMode(enabled) {
   document.documentElement.classList.toggle('oled-theme-active', !!enabled);
   if (enabled) syncOledShelfOpacity();
   else document.documentElement.classList.remove('oled-transparent-shelf');
-
-  updateLogoState();
 }
+
+// The settings panel is always red; the logo that switched themes is gone.
+const UI_THEME = 'classic-red';
 
 function applyTheme(theme) {
   if (optionsPanel) {
       optionsPanel.classList.toggle('theme-classic-red', theme === 'classic-red');
   }
   setNotificationTheme(theme);
-  updateLogoState();
 }
 
 const menuKeyExists = shortcutKeys.some(key => shortcutCache[key] === 'config_menu');
@@ -1557,8 +1528,7 @@ initLogoStyle();
 applyOledMode(configRead('enableOledCareMode'));
 configAddChangeListener('enableOledCareMode', (evt) => applyOledMode(evt.detail.newValue));
 
-applyTheme(configRead('uiTheme'));
-configAddChangeListener('uiTheme', (evt) => applyTheme(evt.detail.newValue));
+applyTheme(UI_THEME);
 
 configAddChangeListener('enableAdBlock', () => {
   syncAdblockHook();

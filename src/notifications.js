@@ -15,7 +15,8 @@ function ensureContainer() {
   if (notificationContainer) return notificationContainer;
   notificationContainer = makeEl('div', 'ytaf-notification-container');
   if (configRead('enableOledCareMode')) notificationContainer.classList.add('oled-care');
-  if (configRead('uiTheme') === 'classic-red') notificationContainer.classList.add('theme-classic-red');
+  // Matches the always-red settings panel (see UI_THEME in ui.js).
+  notificationContainer.classList.add('theme-classic-red');
   document.body.appendChild(notificationContainer);
   return notificationContainer;
 }

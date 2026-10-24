@@ -129,7 +129,7 @@ export const videoCodecModes = {
 };
 
 const configOptions = new Map([
-  ['uiTheme', { default: 'blue-force-field', desc: 'UI Theme' }],
+  ['uiTheme', { default: 'classic-red', desc: 'UI Theme' }],
   ['enableAdBlock', { default: true, desc: 'Ad Blocking' }],
   ['enableTrackingBlock', { default: false, desc: 'Reduce Telemetry & Tracking' }],
   ['enableReturnYouTubeDislike', { default: true, desc: 'Return YouTube Dislike' }],

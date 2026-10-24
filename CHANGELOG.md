@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.9.0] - 2026/10/24 - YouTube Extended+
+
+First release of the YouTube Extended+ fork (based on 0.8.4).
+
+## Added
++ DeArrow: crowdsourced titles and thumbnails, with its own settings tab (replace titles, title formatting, remove emojis, replace thumbnails, random / auto-generated / original / blank fallback)
+
+## Fixed
++ SponsorBlock turned itself off after switching to another app and back
++ ~20 s frozen playback after a video screensaver took the hardware decoder
+
+## Changed
++ Renamed to YouTube Extended+, removed the old logo, settings panel is always red
+
 ## [0.8.4] - 2026/09/29
 
 ## Added
