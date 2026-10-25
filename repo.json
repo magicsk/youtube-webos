@@ -29,14 +29,14 @@
     {
       "id": "youtube.leanback.v4.webos22",
       "title": "YouTube Extended+ (webOS 22+)",
-      "description": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
+      "description": "YouTube Extended+ for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
       "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4.webos22",
         "version": "0.9.2",
         "type": "web",
         "title": "YouTube Extended+ (webOS 22+)",
-        "appDescription": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
+        "appDescription": "YouTube Extended+ for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
         "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
         "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
