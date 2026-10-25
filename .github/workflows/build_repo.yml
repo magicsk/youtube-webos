@@ -93,7 +93,7 @@ jobs:
               if is_modern:
                   pkg_id = f"{pkg_id}.webos22"
                   title = f"{title} (webOS 22+)"
-                  description = "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware."
+                  description = "YouTube Extended+ for webOS 22 and newer. Lighter optimized build supporting newer hardware."
               
               manifest = {
                   "id": pkg_id,
