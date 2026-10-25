@@ -13,16 +13,16 @@
       "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4",
-        "version": "0.9.1",
+        "version": "0.9.2",
         "type": "web",
         "title": "YouTube Extended+",
         "appDescription": "YouTube Extended+",
         "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
         "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.1/youtube.leanback.v4_0.9.1_all.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.2/youtube.leanback.v4_0.9.2_all.ipk",
         "ipkHash": {
-          "sha256": "20e0feae32c584331c9d458fb74bacef3547511b97978aff87ce5ec1eaa72b8a"
+          "sha256": "fe7287d384c256116ec818e95b5f205a70bee1f6ef619d82f5b6f204b639d539"
         }
       }
     },
@@ -33,16 +33,16 @@
       "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
       "manifest": {
         "id": "youtube.leanback.v4.webos22",
-        "version": "0.9.1",
+        "version": "0.9.2",
         "type": "web",
         "title": "YouTube Extended+ (webOS 22+)",
         "appDescription": "YouTube AdFree for webOS 22 and newer. Lighter optimized build supporting newer hardware.",
         "iconUri": "https://raw.githubusercontent.com/magicsk/youtube-webos/main/assets/icon.png",
         "sourceUrl": "https://github.com/magicsk/youtube-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.1/youtube.leanback.v4_0.9.1_all_webOS22%2B.ipk",
+        "ipkUrl": "https://github.com/magicsk/youtube-webos/releases/download/0.9.2/youtube.leanback.v4_0.9.2_all_webOS22%2B.ipk",
         "ipkHash": {
-          "sha256": "68f7a05413fdc4018acad86c09e23b255ed81f157e986defdf3d4f7d3cd6687c"
+          "sha256": "37f615493ab98224718a77806a70aef818b0e8f54943352a78cb4cc7b9634161"
         }
       }
     }
